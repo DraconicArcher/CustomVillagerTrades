@@ -35,7 +35,7 @@ public class TradeItem {
     public String itemKey;
     public int amount = 1;
     public Integer priceModifier;
-    public String name;
+    public String customName;
 
     public String advancedNBTData;
 
@@ -287,8 +287,8 @@ public class TradeItem {
         }
 
 
-        if (name != null && !name.isBlank()) {
-            stack.set(DataComponents.CUSTOM_NAME, Component.literal(name));
+        if (customName != null && !customName.isBlank()) {
+            stack.set(DataComponents.CUSTOM_NAME, Component.literal(customName));
         }
 
 
